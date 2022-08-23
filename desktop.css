@@ -1,0 +1,147 @@
+/* For Desktop Position */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* Nave Bar Start */
+.nav-logo img{
+    position: absolute;
+    top:-10px;
+    left:2%;
+    text-align: left;
+    width:120px;
+    height:120px;
+    
+}
+
+.nav-head{
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.nav-menu{
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.nav-menu a{
+    font-size: 1em;
+ 
+    padding: 12px;
+    margin-right:10px;
+    background: transparent;
+}
+/* Nav BAr End Here */
+
+
+/* Profile start here */
+
+ .profile{
+    padding: 130px 10px;
+    text-align: center;
+    position: relative;
+    background-image: url(image/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    max-height: 950px;
+    
+}
+.profile .top-weather{
+    width:140px;
+    height:140px;
+    position: absolute;
+    top:3.5%;
+    right:3%;
+    transition: width 2s transform 2s;
+}
+.profile .top-weather:hover{
+    width:160px;
+    transform: rotate(360deg);
+}
+
+
+
+.profile .bottom-weather{
+    width:130px;
+    height:130px;
+    position: absolute;
+    bottom:2.5%;
+    left:3%;
+    transition:transform 2s;
+}
+.profile .bottom-weather:hover{
+   
+    transform: rotate(360deg);
+}
+
+/* Profile End Here */
+
+
+/* About me start Here */
+.about-img img{
+    margin-top: 40px;
+    width:270px;
+    height:300px;
+}
+
+.about-desc p{
+    text-align: left;
+}
+/* About me End Here */
+
+
+
+/* Professional experience start here */
+.profession{
+    padding: 1% 3%;
+}
+/* Professional experience end here */
+
+
+
+/* Achibment-contact start here */
+    /* .achievment{
+        margin-right:10px;
+    } */
+
+    .contact button{
+        width:140px;
+        font-size: 1rem;
+       letter-spacing:2px;
+    }
+
+     
+    .contact-link{
+        position: relative;
+       
+    }
+
+    .media-btn{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        margin-top:160px;
+    }
+/* Achibment-contact end here */
+
+
+
+/* footer start Here */
+  .footer a{
+    margin-top: 12px;
+    text-align: left;
+  }
+
+
+/* footer end Here */

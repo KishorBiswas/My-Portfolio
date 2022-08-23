@@ -1,0 +1,535 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Fira Sans', sans-serif;
+ 
+}
+
+/* Nav Bar Start */
+.nav-logo img{
+    width:120px;
+    height:120px;
+}
+h1{
+    font-size:2.5rem;
+    /* text-align: center; */
+   
+}
+
+h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.doted-hr{
+    border:dotted 6px #fff;
+    border-bottom: none;
+    margin:20px auto 20px auto;
+    width:50px;
+}
+a{
+    text-decoration: none;
+    color:blue;
+    font-size: 1.3rem;
+}
+p{
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+
+/* Used for desktop */
+[class*="col-"]{
+    float:left;
+    padding: 10px;
+} 
+
+/* For Mobile */
+[class*="col-"]{
+    width:100%;
+}
+.navbar{
+    background: rgb(18, 190, 190);
+    padding:1% 7%;
+    text-align: center;
+}
+
+.nav-head h1{
+    color: #fff;
+    margin:0;
+    padding-top: 10px;
+  
+}
+
+.nav-menu{
+    display:flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.nav-menu a{
+    background-color:rgb(37, 100, 79);
+    color:#fff;
+    border-radius: 10px;
+    margin:7px 0;
+    padding:10px;
+    transition: 0.5s;
+}
+.nav-menu a:hover{
+    background-color: gray;
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: blue;
+    font-weight: 600;
+}
+
+.navbar::after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+
+
+/* Nav BAr End Here */
+
+
+
+/* Profilre Start from Here */
+.profile{
+    padding: 130px 10px;
+    text-align: center;
+    position: relative;
+    background-image: url(image/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    opacity: 0.8;
+}
+
+
+.profile .top-weather{
+    width:130px;
+    height:130px;
+    position: absolute;
+    top:2%;
+    right:2.5%;
+    transition: transform 2s;
+}
+.profile .top-weather:hover{
+    transform: rotate(360deg);
+}
+
+.profile-desc h1{
+     font-family: 'Satisfy', cursive;
+     font-size: 3rem;
+    
+}
+
+.profile-desc p{
+    color:#111;
+    margin: 0px auto 20px auto;
+    text-align: center;
+    width:85%;
+}
+
+.profile .bottom-weather{
+    width:130px;
+    height:130px;
+    position: absolute;
+    bottom:2.5%;
+    left:3%;
+    transition: transform 2s;
+}
+.profile .bottom-weather:hover{
+    transform: rotate(720deg);
+}
+
+.profile::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Profilre End from Here */
+
+
+
+
+/* About me start Here */
+.about{
+    background-color: #39a4ac;
+    padding: 1% 7%;
+    color:#fff;
+    text-align: center;
+    font-family:'Montserrat', sans-serif; 
+}
+
+.about-img img{
+    border:5px solid #fff;
+    box-shadow: 2px 2px 8px 3px gray;
+    border-radius: 50%;
+    width:200px;
+    height: 220px;
+    filter: brightness(110%) saturate(110%) drop-shadow(10px);
+}
+
+.about-desc p{
+    text-align: center;
+    margin: 10px auto;
+    color:rgb(253, 252, 252);
+    transition: 0.5s;
+}
+
+.about-desc p:hover{
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+    background-color:rgb(160, 158, 158);
+}
+
+.about-desc a{
+    font-size: 1.2rem;
+    color:rgb(45, 45, 243);
+}
+
+.cvBtn{
+    background-color: #052d2f;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    padding: 12px;
+    margin: 2%  72% 2% 0;
+    width: 150px;
+    cursor: pointer;
+   
+}
+.cvBtn:hover{
+    box-shadow: 0 2px 8px 5px #a39e9e, 0 3px 8px 6px rgb(133, 133, 156);
+}
+
+.about::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+ 
+/* About me End Here */
+
+
+
+
+/* Professional experience start here */
+
+.profession{
+    padding: 1% 0px;
+     
+}
+
+
+.profession .card{
+    padding: 10px;
+    height: 800px;
+    box-sizing: border-box;
+    background-color: #a39e9e;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.profession .card:hover{
+    box-shadow: 0px 4px 8px 4px black;
+}
+.profession .card .card-icon{
+    text-align: center;
+}
+
+
+.profession .card .card-icon img{
+    width:100px;
+    height:100px;
+    margin: 20px auto;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    padding:15px;
+    transition: transform 2s;
+}
+.card:hover img{
+    transform: rotate(360deg);
+}
+ 
+.card-title h2{
+    text-align: center;
+    background-color: #616161;
+    color:aliceblue;
+    font-size: 1.3rem;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.card-desc ol{
+    padding:0px 30px;
+    
+}
+.card-desc ol li{
+    margin:10px 0;
+}
+
+
+.card-desc ul{
+    padding:0px 30px;
+    
+}
+
+/* Make progres bar start(under profession) */
+.skils-contener{
+    padding-right: 46px;
+}
+
+.skils-contener li{
+    list-style: none;
+    font-weight: 900;
+    margin:30px 10px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+
+.skils-contener li::before{
+    content: "";
+    position: absolute;
+    top:calc(100% + 5px);
+    left:0;
+    border-radius: 50px;
+    width:100%;
+    height: 10px;
+    background-color: rgb(86,86,153,.5);
+}
+
+
+.skils-contener li::after{
+    content: "";
+    position: absolute;
+    top:calc(100% + 5px);
+    left:0;
+    border-radius: 50px;
+    width:0;
+    height: 10px;
+    background-color: rgb(86, 48, 167,1);
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 5;
+    
+}
+
+
+.skils-contener li.html::after{
+    animation-name: html;
+}
+
+
+@keyframes html{
+    to{width:95%}
+}
+
+
+.skils-contener li.css::after{
+    animation-name: css;
+}
+
+
+@keyframes css{
+    to{width:90%}
+}
+
+
+.skils-contener li.boostrap::after{
+    animation-name:boostrap;
+}
+
+
+@keyframes boostrap{
+    to{width:50%}
+}
+
+.skils-contener li.javascript::after{
+    animation-name:javascript;
+}
+
+
+@keyframes javascript{
+    to{width:80%}
+}
+
+.skils-contener li.firebase::after{
+    animation-name:firebase;
+}
+
+
+@keyframes firebase{
+    to{width:40%}
+}
+
+.skils-contener li.svg::after{
+    animation-name:svg;
+}
+
+
+@keyframes svg{
+    to{width:40%}
+}
+
+.skils-contener li.sass::after{
+    animation-name:sass;
+}
+
+
+@keyframes sass{
+    to{width:65%}
+}
+
+.skils-contener li.github::after{
+    animation-name:github;
+}
+
+
+@keyframes github{
+    to{width:80%}
+}
+
+.skils-contener li.react::after{
+    animation-name:react;
+}
+
+
+@keyframes react{
+    to{width:75%}
+}
+
+
+
+
+
+
+
+
+/* Make progres bar end (under profession) */
+
+.profession::after{
+    clear: both;
+    display: table;
+    content: "";
+}
+/* Professional experience end here */
+
+
+
+
+/* Achibment-contact start here */
+
+.achievment-contact{
+    padding: 1% 7%;
+    background-color: #39a4ac;
+    color: #fff;
+}
+
+.achievment p {
+    margin-top: 10px;
+}
+
+
+
+.contact {
+    text-align: center;
+}
+
+
+.contact input, textarea{
+    width:100%;
+    padding: 5px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+
+.contact button{
+    border: none;
+    border-radius: 12px;
+    background-color: #052d2f;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-right: 20px;
+    width:100px;
+}
+
+
+
+.contact-link{
+    text-align: center;
+}
+
+.media-btn .btn{
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 5px;
+    margin: 10px;
+    width:50px;
+}
+.btn:hover{
+    background-color:rgb(174, 174, 252);
+}
+
+.achievment-contact::after{
+    clear: both;
+    display: table;
+    content: "";
+}
+
+
+/* Achibment-contact end here */
+
+
+
+
+/* footer start Here */
+    .footer{
+        background-color: #111;
+        padding:5px;
+        color: #fff;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .footer a span{
+        margin:0 5px;
+    }
+    .footer a{
+        color: #fff;
+        margin:0 14px;
+        text-align: center;
+        transition: 0.2s;
+    }
+
+    .footer a:hover{
+        color:gray;
+        outline-style: solid;
+        outline-width: 1px;
+        outline-color:aqua;
+        border-radius: 20px;
+        padding:0 5px;
+    }
+
+    .footer::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+/* footer end Here */
